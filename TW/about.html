@@ -1,0 +1,83 @@
+<!DOCTYPE html >
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bevaddi | Eyewear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125" alt=""></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <img src="images/bag.png" width="40" height="30" alt="">
+          <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+  
+     <!-- about-page -->
+
+     <div class="about-page">
+      <div class="container">
+        <div id="div1">
+          <p id="title" style="padding-bottom: 100px; padding-top: 100px; font-style:italic; font-size: large;">ABOUT US</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("Our team is based in Bucharest and our mission is to bring you the best fashionable eyewear, sustainably.");
+    var node2= document.createTextNode("Our journey started in 2019, and we are still learning and trying to develop.")
+    para.appendChild(node);
+    para.appendChild(node2);
+    
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+    
+    </script>
+
+
+     <!-- footer -->
+    <div class="footer">
+      <p class="copyright">&#169;2021 Bevaddi</p>
+    </div>
+<!-- js for toggle -->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight ="0px";
+
+  function menutoggle(){
+    if(MenuItems.style.maxHeight =="0px")
+    {
+      MenuItems.style.maxHeight ="200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight ="0px";
+    }
+  }
+</script>
+
+
+
+  </body>
+
+  </html>
